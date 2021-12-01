@@ -11,6 +11,52 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 25%;
+	margin: 0 auto;
+}
+
+.appTitle {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: bold;
+	font-size: 3vw;
+}
+
+.appLogo {
+	width: 20%;
+	aspect-ratio: 1;
+}
+
+.appBotSwitch {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.appSwitchBtn {
+	width: 45%;
+	padding: 5px;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #cad2c5;
+	color: #354f52;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.2vw;
+}
+
+.appSwitchBtn.selected {
+	background-color: #354f52;
+	color: #cad2c5;
+}
+
+.appSubTitle {
+	margin-top: 15px;
 }
 
 .appBody {
@@ -18,15 +64,18 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 25%;
+	margin: 0 auto;
 }
 .appGame {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 25%;
-	margin: 0 auto;
+	width: 100%;
 	z-index: 1;
+	margin-bottom: 20px;
+	margin-top: 15px;
 }
 
 .appBtnContainer {
@@ -75,11 +124,10 @@
 }
 
 .appGameStats {
-	width: 30%;
-	margin-top: 30px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .appGameScore {
@@ -87,16 +135,24 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #52796f;
+	background-color: #cad2c5;
 	border-radius: 10px;
 	width: 23%;
 	padding: 5px;
+	text-align: center;
+	border: 2px inset #354f52;
 }
 
-.appGameScore span {
-	color: #cad2c5;
+.appGameScoreHeader {
+	color: #354f52;
 	font-weight: bold;
-	font-size: 1.2vw;
+	font-size: 1vw;
+}
+
+.appGameScoreData {
+	color: #354f52;
+	font-weight: bold;
+	font-size: 1.5vw;
 }
 
 .appFooter {
